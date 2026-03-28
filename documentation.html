@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteTutor Template - Documentation</title>
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #F59E0B;
+            --text: #334155;
+            --bg: #FAFAFA;
+            --code-bg: #1E293B;
+            --border: #E2E8F0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Sidebar Navigation */
+        aside {
+            width: 280px;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            padding: 2rem;
+            background: white;
+            border-right: 1px solid var(--border);
+            overflow-y: auto;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-mark {
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-style: italic;
+        }
+
+        nav a {
+            display: block;
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.5rem 0;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            padding: 3rem 4rem;
+            max-width: 800px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        code {
+            font-family: 'Menlo', 'Monaco', monospace;
+            background: #E2E8F0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #b91c1c;
+        }
+
+        pre {
+            background: var(--code-bg);
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        pre code {
+            background: transparent;
+            color: inherit;
+            padding: 0;
+        }
+
+        ul.feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.feature-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul.feature-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .callout {
+            background: #EFF6FF;
+            border-left: 4px solid #3B82F6;
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 2rem 0;
+        }
+
+        .callout.warning {
+            background: #FFFBEB;
+            border-left-color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <div class="logo">
+                <div class="logo-mark">E</div>
+                EliteTutor.
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#introduction">1. Introduction</a></li>
+                    <li><a href="#prerequisites">2. Prerequisites</a></li>
+                    <li><a href="#installation">3. Installation & Setup</a></li>
+                    <li><a href="#structure">4. Project Structure</a></li>
+                    <li><a href="#customization">5. Customizing Content</a></li>
+                    <li><a href="#styling">6. Styling & Theme</a></li>
+                    <li><a href="#animations">7. Animations (Framer Motion)</a></li>
+                    <li><a href="#deployment">8. Deployment</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Content -->
+        <main>
+            <section id="introduction">
+                <h1>EliteTutor Documentation</h1>
+                <p>Thank you for purchasing the EliteTutor Next.js Academic Template! This highly polished, animated landing page is designed for high-end tutors and educational consultants.</p>
+                <p>This template is built using the latest bleeding-edge React features including <strong>Next.js 14+ (App Router)</strong>, <strong>Tailwind CSS v4</strong>, and <strong>Framer Motion</strong>.</p>
+            </section>
+
+            <section id="prerequisites">
+                <h2>Prerequisites</h2>
+                <p>Before you begin, ensure you have the following installed on your local development environment:</p>
+                <ul class="feature-list">
+                    <li><strong>Node.js</strong> - Version 18.17.0 or higher.</li>
+                    <li><strong>npm</strong> (or yarn, pnpm) - Usually comes with Node.js.</li>
+                    <li>A text editor of your choice (VS Code is highly recommended).</li>
+                </ul>
+            </section>
+
+            <section id="installation">
+                <h2>Installation & Setup</h2>
+                <p>Getting your project running locally is extremely simple. Open your terminal, navigate to the template folder, and run the following commands:</p>
+                <ol>
+                    <li>Install all dependencies:
+<pre><code>npm install</code></pre>
+                    </li>
+                    <li>Start the local development server:
+<pre><code>npm run dev</code></pre>
+                    </li>
+                </ol>
+                <div class="callout">
+                    <p><strong>Note:</strong> Once the server is running, open your browser and navigate to <code>http://localhost:3000</code>. Any changes you make to the source code will automatically refresh the page!</p>
+                </div>
+            </section>
+
+            <section id="structure">
+                <h2>Project Structure</h2>
+                <p>This template follows the official Next.js App Router conventions. Here is a breakdown of where to find everything:</p>
+<pre><code>.
+├── public/                 # Static assets (images, favicons)
+├── src/
+│   ├── app/                # Next.js App Router pages and layouts
+│   │   ├── globals.css     # Global Tailwind v4 styles and CSS variables
+│   │   ├── layout.tsx      # Root HTML layout, Fonts mapping, and Providers
+│   │   └── page.tsx        # Main Landing Page assembling all components
+│   ├── components/         # React Components
+│   │   ├── layout/         # Header and Footer
+│   │   ├── sections/       # Hero, Services, Pricing, Stats, Testimonials
+│   │   └── ui/             # Reusable UI elements (Modal, Buttons)
+│   ├── context/            # React Contexts (e.g., Modal Context for forms)
+│   └── lib/                
+│       ├── data.ts         # CENTRALIZED DATA: Edit this file to change site text!
+│       └── utils.ts        # Helper functions (clsx, tailwind-merge)
+└── package.json            # Project dependencies
+</code></pre>
+            </section>
+
+            <section id="customization">
+                <h2>Customizing Content</h2>
+                <p>To make editing fast, all the dynamic data (pricing details, statistics, testimonials, and service frameworks) is centralized in a single file.</p>
+                <p>Navigate to <code>src/lib/data.ts</code>.</p>
+                <p>In this file, you will find simple JavaScript arrays and objects. For example, to edit the pricing tiers, locate the <code>pricingTiers</code> array:</p>
+<pre><code>export const pricingTiers = [
+  {
+    id: "starter",
+    name: "Crash Course",
+    monthlyPrice: 199,
+    fullPrice: 499,
+    features: [
+      "10 Hours 1-on-1 Tutoring",
+      "2 Full Mock Tests"
+    ],
+    isPopular: false,
+  },
+  // ...
+]</code></pre>
+                <div class="callout warning">
+                    <p><strong>Images:</strong> Placeholder images (like the portrait in the Hero section) are hardcoded directly into the component. To change the Hero image, open <code>src/components/sections/Hero.tsx</code> and replace the <code>&lt;img src="..." /&gt;</code> URL with your own image path located in the <code>public</code> folder (e.g., <code>src="/my-photo.jpg"</code>).</p>
+                </div>
+            </section>
+
+            <section id="styling">
+                <h2>Styling & Theme (Tailwind v4)</h2>
+                <p>Because this template uses <strong>Tailwind CSS v4</strong>, there is no traditional <code>tailwind.config.ts</code> file. The core theme colors, custom fonts, and custom utilities are defined directly using CSS variables in <code>src/app/globals.css</code>.</p>
+                <p>To change the primary color scheme, edit these variables:</p>
+<pre><code>@theme inline {
+  --color-primary: #0F172A; /* Main dark blue */
+  --color-accent: #F59E0B;  /* Golden Call-To-Action color */
+  --color-background: #FAFAFA; /* Off-white page background */
+  --color-foreground: #0F172A; /* Default text color */
+}</code></pre>
+                <p>All Google Fonts are imported optimally in Next.js via <code>src/app/layout.tsx</code>. If you wish to change the fonts, alter the imports in the layout file.</p>
+            </section>
+
+            <section id="animations">
+                <h2>Animations (Framer Motion)</h2>
+                <p>This template heavily utilizes <code>framer-motion</code>. The animations are primarily controlled via two patterns:</p>
+                <ol>
+                    <li><strong>Scroll-Driven Appearance</strong>: Components fade up natively using <code>whileInView</code> and <code>viewport={{ once: true }}</code> attributes on <code>&lt;motion.div&gt;</code> tags.</li>
+                    <li><strong>Parallax & Scroll Progress</strong>: The <i>Methodology</i> timeline and <i>Hero</i> parallax rely on the <code>useScroll()</code> and <code>useTransform()</code> hooks. Modifying these hooks inside the components allows you to adjust the speed or distance of the parallax effects.</li>
+                </ol>
+            </section>
+
+            <section id="deployment">
+                <h2>Deployment</h2>
+                <p>Your Next.js project is fully optimized for production deployment on exactly the infrastructure of your choice, though <strong>Vercel</strong> is recommended.</p>
+                <ul class="feature-list">
+                    <li>Create a free account on <a href="https://vercel.com" target="_blank">Vercel.com</a>.</li>
+                    <li>Push your locally modified code to a GitHub repository.</li>
+                    <li>Log into Vercel, click "Add New Project", select your repository, and click Deploy.</li>
+                </ul>
+                <p>If deploying to a traditional host, build the application manually via:</p>
+<pre><code>npm run build
+npm run start</code></pre>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
