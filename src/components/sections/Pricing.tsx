@@ -115,7 +115,7 @@ export default function Pricing() {
                     "w-full py-4 rounded-xl font-medium transition-colors shadow-lg",
                     isPopular 
                         ? "bg-accent hover:bg-amber-600 text-white shadow-accent/20" 
-                        : "bg-primary hover:bg-blue-900 text-white shadow-primary/10"
+                        : "bg-slate-900 dark:bg-slate-700 hover:bg-slate-800 dark:hover:bg-slate-600 text-white shadow-black/10"
                   )}
                 >
                   Get Started
